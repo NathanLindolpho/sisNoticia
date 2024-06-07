@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Empresa - Cadastro de Usuário</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+        }
+        header {
+            background-color: orange; /* Preto */
+            padding: 10px 0;
+            text-align: center;
+            color: #fff; /* Branco */
+        }
+        footer {
+            background-color: orange; /* Preto */
+            padding: 10px 0;
+            text-align: center;
+            color: #fff; /* Branco */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff; /* Branco */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: #343a40; /* Preto */
+            color: #fff; /* Branco */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 400px;
+        }
+        h1 {
+            color: #007bff; /* Azul */
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* Azul */
+            border: none;
+            color: #fff; /* Branco */
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Azul mais escuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TJ Security</h1>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Cadastro de Usuário</h2>
+        <form action="config/cadastrar_usuario.php" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Cadastrar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TJ Security. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
