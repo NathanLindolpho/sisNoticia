@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - TJ Security</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            background-color: orange; 
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em 2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            background-color: #222;
+            padding: 3em;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 2em auto;
+            text-align: justify; /* Alinhamento justificado */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            text-align: center; /* Centraliza o título */
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            color: orange; /* Cor de destaque */
+            margin-top: 3em;
+            text-align: center; /* Centraliza os títulos de seções */
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 2em;
+        }
+
+        li {
+            margin-bottom: 0em;
+        }
+
+        footer {
+            background-color: orange; 
+            padding: 1em 0;
+            text-align: center;
+            color: #fff; 
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 2em;
+                width: 90%; /* Ajusta a largura para telas menores */
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>TJ Noticias</h1>
+        </div>
+        <nav>
+            <a href="index.php">Login</a>
+            <a href="noticias.html">Notícias</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Sobre a TJ Noticias</h1>
+
+        <p>Este repositório contém o código-fonte de um projeto de blog desenvolvido com PHP, MySQL, HTML, CSS e JavaScript. O projeto utiliza XAMPP para o ambiente de desenvolvimento local e Visual Studio Code como IDE. O versionamento do código é gerenciado pelo Git.</p>
+
+        <h2>Funcionalidades</h2>
+        <ul>
+            <li>Interface de Login e Cadastro: Intuitiva e amigável, permitindo a criação e autenticação de usuários.</li>
+            <li>Sistema de Postagens: Permite que usuários autenticados criem, editem e excluam postagens de blog.</li>
+            <li>Envio de E-mails: Integração com um serviço de e-mail para envio de confirmações de cadastro e notificações.</li>
+            <li>Conexão Segura com MySQL: Autenticação e armazenamento de usuários e postagens de maneira segura.</li>
+            <li>Código Limpo e Organizado: Fácil de manter e expandir, com documentação abrangente.</li>
+        </ul>
+
+        <h2>Tecnologias Utilizadas</h2>
+        <ul>
+            <li>PHP: Para a lógica do servidor e manipulação de dados.</li>
+            <li>MySQL: Para armazenamento e gerenciamento de dados.</li>
+            <li>Visual Studio Code: Como IDE principal para desenvolvimento.</li>
+            <li>JavaScript: Para interatividade no frontend.</li>
+            <li>Apache: Servidor web para execução do projeto.</li>
+            <li>GitHub: Para controle de versão e colaboração.</li>
+            <li>HTML5 & CSS: Para estruturação e estilização das páginas.</li>
+        </ul>
+
+        <h2>Observação</h2>
+        <p>Este projeto serve como base para desenvolvimento de um blog e pode ser expandido com recursos adicionais conforme a necessidade.</p>
+
+        <h2>Público-Alvo</h2>
+        <p>Desenvolvedores web que buscam uma solução completa e segura para gerenciamento de conteúdo e autenticação de usuários em seus projetos. O código é limpo, documentado e pronto para customização.</p>
+    </div>
+
+    <footer>
+        <p>© 2024 TJ Security</p>
+    </footer>
+
+</body>
+</html>
